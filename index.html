@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title img src="">Eat at Co</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- Bootstrap code for navigation bar-->
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src= "EatAt_CO_logo.png">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+             <!-- Locations and menu dropdown -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Locations and Menu
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Overview</a></li>
+                  <li><a class="dropdown-item" href="#">CHARLESTON</a></li>
+                  <li><a class="dropdown-item" href="#">CHARLOTTE - WAVERLY</a></li>
+                  <li><a class="dropdown-item" href="#">CHARLOTTE - PARK ROAD</a></li>
+                  <li><a class="dropdown-item" href="#">MYRTLE BEACH</a></li>
+                  <li><a class="dropdown-item" href="#">RALEIGH</a></li>
+                  <li><a class="dropdown-item" href="#">SAVANNAH</a></li>
+                </ul>
+              </li>
+              <!-- List of pages in navbar-->
+              <li class="nav-item">
+                <a class="nav-link active" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="giftcards.html">Gift Cards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Press</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Store</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Jobs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Rewards Program</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Order Online</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+    </nav>
+
+    <!--Header banner content-->
+    <div class="home-gallery">
+      <h2>A MODERN TAKE ON TRADITIONAL SOUTHEAST ASIAN CUISINE</h2>
+      <p>Pho | Ramen | Dumplings | Banh Mi | Sushi | Cocktails<p>
+      
+      <script>
+        //Array of images which you want to show: Use path you want.
+        var images=new Array('home_gallery_img_1.png', 'home_gallery_img_2.jpeg');
+        var nextimage=0;
+        doSlideshow();
+        
+        function doSlideshow(){
+            if(nextimage>=images.length){nextimage=0;}
+            $('.home-gallery')
+            .css('background-image','url("'+images[nextimage++]+'")')
+            .fadeIn(500,function(){
+                setTimeout(doSlideshow,1000);
+            });
+        }
+        </script>
+    </div>
+
+    <!--Grid gallery of eight images-->
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <a href="https://www.instagram.com/p/CgPKS7wu3gy/" style="background-image:url('https://scontent-iad3-1.cdninstagram.com/v/t51.29350-15/294642354_344514117852962_5248522892374381354_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=PWJIyNJfz8IAX-8Ck4Q&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8lM_PXMwepeOeYOqQ8UshyOKDrBMoNo7cKsCURMjd-Gw&oe=62DC6D02');" target="_blank" rel="noopener">
+            <img class="sr-only" alt="view CO on instagram">
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://www.instagram.com/p/CgPKS7wu3gy/" style="background-image:url('https://scontent-iad3-1.cdninstagram.com/v/t51.29350-15/294642354_344514117852962_5248522892374381354_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=PWJIyNJfz8IAX-8Ck4Q&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8lM_PXMwepeOeYOqQ8UshyOKDrBMoNo7cKsCURMjd-Gw&oe=62DC6D02');" target="_blank" rel="noopener">
+            <img class="sr-only" alt="view CO on instagram">
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://www.instagram.com/p/CfZAl3SOgZk/" style="background-image:url('https://scontent-iad3-1.cdninstagram.com/v/t51.29350-15/290984546_5073187899396946_5237069034785682145_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=KdOBKzNQ3NsAX8vx47n&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT-svAAoJ4MZzsZdKx9bxvAJ9KdDrDtptUqP9II4DPogLA&oe=62DC8223');" target="_blank" rel="noopener">
+            <img class="sr-only" alt="view CO on instagram">
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://www.instagram.com/p/CedtXWPutZI/" style="background-image:url('https://scontent-iad3-1.cdninstagram.com/v/t51.29350-15/286195996_438405654303208_7537814586367439715_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=XCYxxjMl2UQAX87WaD2&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT-wBWpOPPtziE5b19zE5I7oeRw22ARgJ_y2AqbkAoRoig&oe=62DC39AA');" target="_blank" rel="noopener">
+            <img class="sr-only" alt="view CO on instagram">
+          </a>
+        </div>
+        <div class="col">
+          <div class="instagram-grid__item">
+            <a href="https://www.instagram.com/p/CeBl1nTOOJM/" style="background-image:url('https://scontent-iad3-1.cdninstagram.com/v/t51.29350-15/284122836_163537709482003_876037791044651220_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=TC9DoKvihA0AX9ZzyE2&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT_Ca9Nb2BeZhZE-A45_MUPwyDTlWVN8CCp53aTcSg2gEw&oe=62DDBF06');" target="_blank" rel="noopener">
+              <img class="sr-only" alt="view CO on instagram">
+            </a>
+        </div>
+      </div>
+
+      <!-- Second row of gallery images-->
+      <div class="row">
+        <div class="col">
+          <a href="https://www.instagram.com/p/Cda9Qo_uYY5/" style="background-image:url('https://scontent-iad3-1.cdninstagram.com/v/t51.29350-15/280475643_552104546258245_4587233270806279768_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=r2U_agRSeZIAX9QaTOV&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT9rEuvd9d9dI6Xv0K3G2kZy234qUT3AYtd32qe4EsoGkw&oe=62DD3853');" target="_blank" rel="noopener">
+            <img class="sr-only" alt="view CO on instagram">
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://www.instagram.com/p/Cc7zxxbOGVk/" style="background-image:url('https://scontent-iad3-1.cdninstagram.com/v/t51.29350-15/279277313_1608626792864107_4905832226297804955_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=cQ2396GmNBAAX-EcpR6&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT-PJAe73wKdvMFcKyxbxxlLmiwfbUlRIJ62U6Af9q_KVw&oe=62DDE589');" target="_blank" rel="noopener">
+            <img class="sr-only" alt="view CO on instagram">
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://www.instagram.com/p/CciITv5OeFq/" style="background-image:url('https://scontent-iad3-1.cdninstagram.com/v/t51.29350-15/278755034_183093290720714_9163583459553869815_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=HuxI5fWdXm8AX_4t9kT&_nc_oc=AQkmXXOy9kzKDRifWnN9-XYl7_N228fjlNv5Mn0tF64Ew3WTYiyNMxbBFjwbGaQG93s&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT8A3Zu781VhhyPZBOHgb79jF4K9obP2Xv89WjtiFmy_NA&oe=62DDE67D');" target="_blank" rel="noopener">
+            <img class="sr-only" alt="view CO on instagram">
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://www.instagram.com/p/CbftJAbJ9XB/" style="background-image:url('https://scontent-iad3-1.cdninstagram.com/v/t51.29350-15/277038840_945814879433787_3409401326266518025_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=7BZl5hi6TYAAX9bVJxd&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT90V3AgpC-C_m4vGDBfjJ1JvWUR8av-9b9pxZwkfwl87w&oe=62DC2D0A');" target="_blank" rel="noopener">
+            <img class="sr-only" alt="view CO on instagram">
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://www.instagram.com/p/Ca7aYfDOxgl/" style="background-image:url('https://scontent-iad3-1.cdninstagram.com/v/t51.29350-15/275598226_1039706926920452_2375636178641322604_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8ae9d6&_nc_ohc=u3YYj5DsxOQAX-ghanL&_nc_ht=scontent-iad3-1.cdninstagram.com&edm=ANo9K5cEAAAA&oh=00_AT_Wmn2-Lw9jnYHDDLaN9aIT8bJfxOT1-pLr4DC2MXoHMA&oe=62DD1494');" target="_blank" rel="noopener">
+            <img class="sr-only" alt="view CO on instagram">
+          </a>
+        </div>
+      </div>
+    </div>
+   
+
+</body>
